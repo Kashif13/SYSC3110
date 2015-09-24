@@ -1,7 +1,4 @@
 package lab22;
-
-import lab22.BuddyInfo;
-
 public class BuddyInfo {
 	
 	

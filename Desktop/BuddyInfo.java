@@ -1,19 +1,10 @@
-package lab22;
-
-import lab22.BuddyInfo;
 
 public class BuddyInfo {
 	
 	
 	private String name;
 	private String address;
-	private int phonenumber;
-	
-	public BuddyInfo(String name, String address, int phonenumber){
-	this.name = name;
-	this.address = address;
-	this.phonenumber = phonenumber;
-	}
+	private String phonenumber;
 	
 	public String getName() {
 		return name;
@@ -35,12 +26,12 @@ public class BuddyInfo {
 	}
 
 
-	public int getPhonenumber() {
+	public String getPhonenumber() {
 		return phonenumber;
 	}
 
 
-	public void setPhonenumber(int phonenumber) {
+	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
 
@@ -50,8 +41,12 @@ public class BuddyInfo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		BuddyInfo b = new BuddyInfo("Kash","avenue", 112);
+		BuddyInfo b = new BuddyInfo();
 		
+		
+		b.setName("Darth Vader");
+		b.setAddress("Death Star");
+		b.setPhonenumber("1-343-666-7777");
 		
 		System.out.println("Hello " + b.getName());
 		
