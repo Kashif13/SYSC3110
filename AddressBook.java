@@ -7,7 +7,7 @@ public class AddressBook{
 	private List<BuddyInfo> buddyInfo;
 	
 	public AddressBook(){
-		this.buddyInfo = new ArrayList<BuddyInfo>();
+		this.buffyInfo = new ArrayList<BuddyInfo>();
 	}
 
 	public void addBuddy(BuddyInfo aBuddyInfo){
@@ -18,7 +18,7 @@ public class AddressBook{
 		
 	
 	public BuddyInfo removeBuddy(int index){
-		if(index >= 0 && index < this.buddyInfo.size()){
+		If(index >= 0 && index < this.buddyInfo.size()){
 			return this.buddyInfo.remove(index);
 		}
 		return null;
